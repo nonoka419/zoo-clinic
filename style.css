@@ -425,7 +425,7 @@ padding: 30px 30px;
 
   .hero img {
     width: 100%;
-    height: px;
+    height: auto;
   }
 
   .hero h1 {
@@ -474,6 +474,14 @@ padding: 30px 30px;
   font-size: 15px;
 }
 
+.text p {
+  font-size: 14px;
+}
+
+.section-box p,
+.staff-text p {
+  font-size: 14px;
+}
   
   .menu-btn {
     display: block;
