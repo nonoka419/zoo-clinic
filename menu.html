@@ -6,83 +6,78 @@
   <title>こはる動物病院</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <header>
   <div class="logo">
   <img src="images/1x/logo.png" alt="">
   </div>
-  <nav>
-    <ul>
-      <li><a href="index.html#about">当院について</a></li>
-      <li><a href="index.html#staff">スタッフ</a></li>
-      <li><a href="index.html#access">アクセス</a></li>
 
-      <li><a href="menu.html">診察内容</a></li>
+  <!-- ハンバーガーボタン -->
+  <button class="menu-btn" id="menuBtn">
+    ☰
+  </button>
+
+  <!-- ナビゲーション -->
+  <nav id="navMenu" class="full-nav">
+    <ul>
+      <li><a href="#about">当院について</a></li>
+      <li><a href="#staff">スタッフ</a></li>
+      <li><a href="#access">アクセス</a></li>
       <li><a href="first.html">初めての方へ</a></li>
+      <li><a href="menu.html">診察内容</a></li>
     </ul>
   </nav>
 </header>
-
 <main>
-    <section class="page-title">
-        <h1>診察内容</h1>
-        <p>当院で対応している診察のご案内です</p>
-    </section>
+    <section class="first-visit">
 
-    <section class="hos-section">
-        <div class="image-wrap">
-            <img src="images/1x/dog.png" alt="" >
+        <div class="title-box">
+            <span class="icon">🔰</span>
+            <h1>初めてご利用の方へ</h1>
         </div>
 
-        <div class="text">
-        <h2>犬・猫の診療</h2>
-        <p>飼い主さまと大切な家族である
-            ワンちゃん・ネコちゃんが、
-            いつまでも元気に過ごせるよう
-            サポートいたします。
-            一般診療からワクチン、健康相談
-            まで幅広く対応しています。
-            小さな不調もお気軽にご相談ください。</p>
-            </div>
-    </section>
+        <p class="lead">
+            初めての来店でも安心していただけるよう、<br>当院では以下の流れで診察を行なっています。
+        </p>
 
-    <section class="hos-section">
-        <div class="image-wrap">
-            <img src="images/1x/hamu.png" alt="" >
+        <div class="flow-box">
+            <h2>①受付・問診票の記入</h2>
+            <p>ペットの普段の様子や気になる症状をお聞きします。<br>
+            初めての方は少し早めのご来院をおすすめしています。</p>
+
+            <h2>②診察・身体チェック</h2>
+            <p>獣医師が丁寧に状態を確認し、必要に応じて検査を提案します。<br>
+            不安なことがあれば何でもご相談ください。</p>
+
+            <h2>③説明・治療方針のご相談</h2>
+            <p>分かりやすい説明を心がけています。 <br>飼い主さまと一緒に最適な治療を一緒に考えます。<br>
+            不安なことがあれば何でもご相談ください。</p>
         </div>
 
-        <div class="text">
-        <h2>小動物の診療</h2>
-        <p>うさぎ・ハムスター・モルモットなどの
-            小動物にも対応しています。
-            体が小さい分、ちょっとした変化が
-            大きなサインになることもあります。
-            経験豊富なスタッフが、動物の種類に
-            合わせた丁寧な診察を行います。</p>
-            </div>
+        <p class="note">
+            小さなことでもお気軽にご相談ください。<br>
+            「うちの子、ちょっと変かも？」と思ったらすぐにご来院ください。
+        </p>
     </section>
-
-    <section class="hos-section">
-        <div class="image-wrap">
-            <img src="images/1x/health.png" alt="" >
-        </div>
-
-        <div class="text">
-        <h2>健康管理</h2>
-        <p>病気の早期発見や予防のために、
-            定期的な健康チェックをおすすめ
-            しています。
-            年齢や生活環境に合わせた検査、
-            予防プランをご提案し、ペットが
-            健やかに暮らせるようお手伝いします。</p>
-            </div>
-    </section>
-
 </main>
 
 <footer>
   <p><small>&copy;こはる動物病院</small></p>
 </footer>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const navMenu = document.getElementById("navMenu");
+
+  menuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+</script>
   
 </body>
 </html>
+
+
+
+
