@@ -112,9 +112,9 @@ footer {
   max-width: none;
   position: relative;
   width: 100%;
-  aspect-ratio: 100 / 40;
   background-size: cover;
   overflow: hidden;
+  height: auto;
 }
 
 .hero img {
@@ -402,8 +402,8 @@ padding: 30px 30px;
 
 @media (max-width: 768px) {
   .logo img {
-    width: 100;
-    height: 40px;
+    width: 250px;
+    height: auto;
   }
 
   nav ul {
@@ -425,7 +425,7 @@ padding: 30px 30px;
 
   .hero img {
     width: 100%;
-    height: 250px;
+    height: px;
   }
 
   .hero h1 {
@@ -445,7 +445,7 @@ padding: 30px 30px;
   }
 
   p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.7;
   }
 
@@ -465,6 +465,14 @@ padding: 30px 30px;
   .hos-section h2 {
     text-align: center;
   }
+
+  .title-box h1 {
+  font-size: 20px;
+}
+
+.first-visit p {
+  font-size: 15px;
+}
 
   
   .menu-btn {
