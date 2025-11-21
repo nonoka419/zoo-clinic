@@ -12,14 +12,20 @@
   <div class="logo">
   <img src="images/1x/logo.png" alt="">
   </div>
-  <nav>
-    <ul>
-      <li><a href="index.html#about">当院について</a></li>
-      <li><a href="index.html#staff">スタッフ</a></li>
-      <li><a href="index.html#access">アクセス</a></li>
 
-      <li><a href="menu.html">診察内容</a></li>
+  <!-- ハンバーガーボタン -->
+  <button class="menu-btn" id="menuBtn">
+    ☰
+  </button>
+
+  <!-- ナビゲーション -->
+  <nav id="navMenu" class="full-nav">
+    <ul>
+      <li><a href="#about">当院について</a></li>
+      <li><a href="#staff">スタッフ</a></li>
+      <li><a href="#access">アクセス</a></li>
       <li><a href="first.html">初めての方へ</a></li>
+      <li><a href="menu.html">診察内容</a></li>
     </ul>
   </nav>
 </header>
@@ -59,6 +65,15 @@
 <footer>
   <p><small>&copy;こはる動物病院</small></p>
 </footer>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const navMenu = document.getElementById("navMenu");
+
+  menuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+</script>
   
 </body>
 </html>
