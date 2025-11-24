@@ -496,6 +496,12 @@ padding: 30px 30px;
   font-size: 20px;
 }
 
+.message .message-logo {
+  width: 400px;
+  height: auto;
+}
+
+
 .first-visit p {
   font-size: 15px;
 }
