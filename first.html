@@ -15,7 +15,9 @@
 
   <!-- ハンバーガーボタン -->
   <button class="menu-btn" id="menuBtn">
-    ☰
+   <span></span>
+   <span></span>
+   <span></span>
   </button>
 
   <!-- ナビゲーション -->
@@ -29,6 +31,10 @@
     </ul>
   </nav>
 </header>
+
+<script src="js/script.js"></script>
+
+
 <main>
     <section class="first-visit">
 
@@ -72,8 +78,10 @@
 
   menuBtn.addEventListener("click", () => {
     navMenu.classList.toggle("open");
+    menuBtn.classList.toggle("active"); 
   });
 </script>
+
   
 </body>
 </html>
